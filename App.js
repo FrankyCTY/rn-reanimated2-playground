@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Animation } from './src';
+import { Animation, WithPanGestureHandler } from './src';
 
 export default function App() {
   return (
@@ -9,7 +9,8 @@ export default function App() {
         style={{ width: '100%' }}
         contentContainerStyle={{ width: '100%' }}
       >
-        <Animation />
+        {/* <Animation /> */}
+        <WithPanGestureHandler />
       </ScrollView>
     </View>
   );
@@ -18,7 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 45,
-    flex: 1,
+    flexGrow: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
