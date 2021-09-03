@@ -4,6 +4,8 @@ import {
   BasicAnimation,
   WobbleSquare,
   AnimatedScroll,
+  PagerExample,
+  ScrollToAndUseDerivedValue,
 } from './src/pureReanimated';
 import {
   WithPanGestureHandler,
@@ -19,8 +21,11 @@ export default function App() {
       >
         {/* <Animation /> */}
         {/* <WobbleSquare /> */}
-        <AnimatedScroll />
+        {/* <AnimatedScroll /> */}
+        {/* <PagerExample /> */}
+        <ScrollToAndUseDerivedValue />
         {/* <WithPanGestureHandler /> */}
+        {/* <WithTapGestureHandler/> */}
       </ScrollView>
     </View>
   );

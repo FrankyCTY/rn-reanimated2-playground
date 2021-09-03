@@ -1,0 +1,1 @@
+export { PagerExample } from './PagerExample';
