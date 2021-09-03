@@ -1,1 +1,0 @@
-export { WithPanGestureHandler } from './WithPanGestureHandler';

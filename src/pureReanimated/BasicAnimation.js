@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
-  withTiming,
   withSpring,
   withRepeat,
 } from 'react-native-reanimated';
@@ -11,13 +10,13 @@ import Animated, {
 const SIZE = 100.0;
 
 // worklets allow us to use UI thread (Native ui thread) instead of js thread)
-const handleRotation = (animatedMain: Animated.SharedValue<number>) => {
-  'worklet';
+// const handleRotation = (animatedMain: Animated.SharedValue<number>) => {
+//   'worklet';
 
-  return `${animatedMain.value * 2 * Math.PI}rad`;
-};
+//   return `${animatedMain.value * 2 * Math.PI}rad`;
+// };
 
-const Animation = () => {
+const BasicAnimation = () => {
   // 1. Set up animation value on UI thread
   const animatedMain = useSharedValue(1);
   const animatedScale = useSharedValue(2);
@@ -59,4 +58,4 @@ const styles = StyleSheet.create({
   view: { height: SIZE, width: SIZE, backgroundColor: 'blue' },
 });
 
-export { Animation };
+export { BasicAnimation };
