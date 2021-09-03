@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Animation, WithPanGestureHandler } from './src';
+import { Animation, WithPanGestureHandler, WobbleSquare } from './src';
 
 export default function App() {
   return (
@@ -10,7 +10,8 @@ export default function App() {
         contentContainerStyle={{ width: '100%' }}
       >
         {/* <Animation /> */}
-        <WithPanGestureHandler />
+        {/* <WithPanGestureHandler /> */}
+        <WobbleSquare />
       </ScrollView>
     </View>
   );

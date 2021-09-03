@@ -28,10 +28,9 @@ const WithPanGestureHandler = () => {
     },
     onEnd: () => {
       const distance = Math.sqrt(translateX.value ** 2 + translateY.value ** 2);
-      const isSquareOutsideOfCircle =
-        distance < CIRCLE_RADIUS + SQUARE_SIZE / 2;
+      const isSquareInsideOfCircle = distance < CIRCLE_RADIUS + SQUARE_SIZE / 2;
 
-      if (isSquareOutsideOfCircle) {
+      if (isSquareInsideOfCircle) {
         translateX.value = withSpring(0);
         translateY.value = withSpring(0);
       }
