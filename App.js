@@ -6,6 +6,7 @@ import {
   AnimatedScroll,
   PagerExample,
   ScrollToAndUseDerivedValue,
+  InterpolateScrollView,
 } from './src/pureReanimated';
 import {
   WithPanGestureHandler,
@@ -17,13 +18,14 @@ export default function App() {
     <View style={styles.container}>
       <ScrollView
         style={{ width: '100%' }}
-        contentContainerStyle={{ width: '100%' }}
+        contentContainerStyle={{ width: '100%', flexGrow: 1 }}
       >
         {/* <Animation /> */}
         {/* <WobbleSquare /> */}
         {/* <AnimatedScroll /> */}
         {/* <PagerExample /> */}
-        <ScrollToAndUseDerivedValue />
+        <InterpolateScrollView />
+        {/* <ScrollToAndUseDerivedValue /> */}
         {/* <WithPanGestureHandler /> */}
         {/* <WithTapGestureHandler/> */}
       </ScrollView>
