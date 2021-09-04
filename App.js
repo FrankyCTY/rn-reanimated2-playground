@@ -16,13 +16,19 @@ import {
   WithPinchGestureHandler,
   DoubleTapToLike,
 } from './src/withGestureHandler';
+import { Tabbar } from './src/Tabbar';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <ScrollView
         style={{ width: '100%' }}
-        contentContainerStyle={{ width: '100%', flexGrow: 1 }}
+        contentContainerStyle={{
+          width: '100%',
+          flexGrow: 1,
+          // only for tabbar
+          justifyContent: 'flex-end',
+        }}
       >
         {/* <Animation /> */}
         {/* <WobbleSquare /> */}
@@ -31,7 +37,9 @@ export default function App() {
         {/* <InterpolateScrollView /> */}
         {/* <ScrollToAndUseDerivedValue /> */}
         {/* <ControlledScrollView /> */}
-        <CircularProgressBar />
+        {/* <CircularProgressBar /> */}
+
+        {<Tabbar />}
 
         {/* <WithPanGestureHandler /> */}
         {/* <WithTapGestureHandler/> */}
@@ -46,7 +54,7 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 45,
     flexGrow: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ea3345',
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -45,7 +45,6 @@ const CircularProgressBar = () => {
 
   return (
     <View style={styles.container}>
-      {/* <Text style={[styles.progressText]}>{progressText.value}</Text> */}
       <ReText style={styles.progressText} text={progressText} />
       <Svg style={{ position: 'absolute' }}>
         <Circle
