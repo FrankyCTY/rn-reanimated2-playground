@@ -7,6 +7,7 @@ import {
   PagerExample,
   ScrollToAndUseDerivedValue,
   InterpolateScrollView,
+  ControlledScrollView,
 } from './src/pureReanimated';
 import {
   WithPanGestureHandler,
@@ -28,11 +29,12 @@ export default function App() {
         {/* <PagerExample /> */}
         {/* <InterpolateScrollView /> */}
         {/* <ScrollToAndUseDerivedValue /> */}
+        <ControlledScrollView />
 
         {/* <WithPanGestureHandler /> */}
         {/* <WithTapGestureHandler/> */}
         {/* <WithPinchGestureHandler /> */}
-        <DoubleTapToLike />
+        {/* <DoubleTapToLike /> */}
       </ScrollView>
     </View>
   );
