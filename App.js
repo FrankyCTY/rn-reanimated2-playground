@@ -11,6 +11,7 @@ import {
 import {
   WithPanGestureHandler,
   WithTapGestureHandler,
+  WithPinchGestureHandler,
 } from './src/withGestureHandler';
 
 export default function App() {
@@ -24,10 +25,12 @@ export default function App() {
         {/* <WobbleSquare /> */}
         {/* <AnimatedScroll /> */}
         {/* <PagerExample /> */}
-        <InterpolateScrollView />
+        {/* <InterpolateScrollView /> */}
         {/* <ScrollToAndUseDerivedValue /> */}
+
         {/* <WithPanGestureHandler /> */}
         {/* <WithTapGestureHandler/> */}
+        <WithPinchGestureHandler />
       </ScrollView>
     </View>
   );

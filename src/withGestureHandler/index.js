@@ -1,2 +1,3 @@
 export * from './WithPanGestureHandler';
-export * from './withTapGestureHandler';
+export * from './WithTapGestureHandler';
+export * from './WithPinchGestureHandler';
