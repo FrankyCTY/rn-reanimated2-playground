@@ -8,6 +8,7 @@ import {
   ScrollToAndUseDerivedValue,
   InterpolateScrollView,
   ControlledScrollView,
+  CircularProgressBar,
 } from './src/pureReanimated';
 import {
   WithPanGestureHandler,
@@ -29,7 +30,8 @@ export default function App() {
         {/* <PagerExample /> */}
         {/* <InterpolateScrollView /> */}
         {/* <ScrollToAndUseDerivedValue /> */}
-        <ControlledScrollView />
+        {/* <ControlledScrollView /> */}
+        <CircularProgressBar />
 
         {/* <WithPanGestureHandler /> */}
         {/* <WithTapGestureHandler/> */}
