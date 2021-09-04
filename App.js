@@ -12,6 +12,7 @@ import {
   WithPanGestureHandler,
   WithTapGestureHandler,
   WithPinchGestureHandler,
+  DoubleTapToLike,
 } from './src/withGestureHandler';
 
 export default function App() {
@@ -30,7 +31,8 @@ export default function App() {
 
         {/* <WithPanGestureHandler /> */}
         {/* <WithTapGestureHandler/> */}
-        <WithPinchGestureHandler />
+        {/* <WithPinchGestureHandler /> */}
+        <DoubleTapToLike />
       </ScrollView>
     </View>
   );
