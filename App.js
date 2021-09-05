@@ -16,7 +16,8 @@ import {
   WithPinchGestureHandler,
   DoubleTapToLike,
 } from './src/withGestureHandler';
-import { Tabbar } from './src/Tabbar';
+import { BankyTabbar } from './src/Tabbar';
+import { RevoluteGraph } from './src/graph';
 
 export default function App() {
   return (
@@ -37,13 +38,15 @@ export default function App() {
         {/* <InterpolateScrollView /> */}
         {/* <ScrollToAndUseDerivedValue /> */}
         {/* <ControlledScrollView /> */}
-        {/* <CircularProgressBar /> */}
+        {/* {<CircularProgressBar />} */}
 
-        {<Tabbar />}
+        {<BankyTabbar />}
+
+        {/* <RevoluteGraph /> */}
 
         {/* <WithPanGestureHandler /> */}
-        {/* <WithTapGestureHandler/> */}
-        {/* <WithPinchGestureHandler /> */}
+        {/* <WithTapGestureHandler /> */}
+        {/* {<WithPinchGestureHandler />} */}
         {/* <DoubleTapToLike /> */}
       </ScrollView>
     </View>

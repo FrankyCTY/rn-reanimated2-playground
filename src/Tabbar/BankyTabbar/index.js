@@ -1,0 +1,1 @@
+export { BankyTabbar } from './BankyTabbar';

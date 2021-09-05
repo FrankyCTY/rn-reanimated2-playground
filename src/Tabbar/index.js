@@ -1,1 +1,1 @@
-export { Tabbar } from './Tabbar';
+export * from './BankyTabbar';
